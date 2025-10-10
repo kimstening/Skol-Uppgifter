@@ -1,0 +1,39 @@
+#countLabel{
+    display: block;
+    text-align: center;
+    font-size: 10em;
+    font-family: Helvetica;
+    animation: color-change 3s infinite;
+}
+
+#buttonContainer{
+    text-align: center;
+}
+
+.buttons{
+    padding: 10px 20px;
+    font-size: 1.5em;
+    color: rgb(34, 27, 27);
+    background-color: #46a80d;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
+
+.buttons:hover{
+    background-color: #8cda68
+}
+
+@keyframes color-change{
+  0% {color: blue;}
+  10% {color: #8e44ad;}
+  20% {color: #1abc9c;}
+  30% {color: #d35400;}
+  40% {color: blue;}
+  50% {color: #34495e;}
+  60% {color: blue;}
+  70% {color: #2980b9;}
+  80% {color: #f1c40f;}
+  90% {color: #2980b9;}
+  100% {color: pink;}
+}
