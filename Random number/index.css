@@ -1,0 +1,39 @@
+.buttons{
+    padding:10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#countLabel{
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.textbox{
+    padding:10px; 
+    font-size: 1em;
+    border-radius: 3px;
+}
+
+#buttoncontainer{
+    text-align: center;
+}
+#number{
+    padding: 20px 10px;
+    font-size: 4em;
+    outline: 3px dotted green;
+    display: flex;
+    width: 100vw;
+    height: 20;
+    text-align: center;
+}
+#header{
+    text-align: center;
+    padding: 0px;
+    font-size: 2em;
+}
+#inputs{
+    align-content: center;
+}
