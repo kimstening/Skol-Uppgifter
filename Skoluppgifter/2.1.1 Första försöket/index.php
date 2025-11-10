@@ -1,5 +1,11 @@
 <!DOCTYPE html>
 <?php
+&host="locahost";
+&user="root";
+&pass="";
+&dbname="britt";
+&conn=mysqli_connect(&host,&user,&pass,&dbname)
+
 $texten="";
 if(isset($_POST['btn'])) {
     $texten=$_POST['txt'];
