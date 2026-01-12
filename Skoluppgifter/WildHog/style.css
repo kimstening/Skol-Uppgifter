@@ -1,0 +1,19 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.links{
+    height:3rem;
+    display:flex;
+    gap:.7rem;
+    padding:.3rem 1rem;
+    align-items:center;
+    background: linear-gradient(to left, #222, #444);
+}
+
+.Header{
+    margin: 0px;
+    background-color: grey;
+}
