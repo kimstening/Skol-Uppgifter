@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    padding: 16px;
+    user-select: none;
+}
+
+
+button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+}
+
+form {
+    background-color: pink;
+    font-size: 24px;
+    margin: 20px;
+    place-content: center;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+noselect {
+    user-select: none;
+}
+
+label {
+    user-select: none;
+}

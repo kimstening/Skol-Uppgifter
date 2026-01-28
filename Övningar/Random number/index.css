@@ -8,7 +8,7 @@
 
 #countLabel{
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 
 .textbox{
@@ -19,12 +19,14 @@
 
 #buttoncontainer{
     text-align: center;
+    user-select: none;
+
 }
 #number{
     padding: 20px 10px;
     font-size: 4em;
-    outline: 3px dotted green;
-    display: flex;
+    --outline: 3px dotted green;
+    display: center;
     width: 100vw;
     height: 20;
     text-align: center;
