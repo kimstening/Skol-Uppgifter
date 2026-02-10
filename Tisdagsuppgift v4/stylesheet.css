@@ -14,19 +14,21 @@ body{
 }
 
 .rubrik{
-    outline: 2px dotted green;
+    --outline: 2px dotted green;
     margin: 10px;
     padding: 10px;
     background: #dd3838;
+    border-radius: 10px;
 }
 
 .underrubrik{
-    outline: 2px dotted purple;
+    --outline: 2px dotted purple;
     margin: 10px;  
     display: flex;
     align-items: top;
     gap: 15px;
     background: #e573e1;
+    border-radius: 10px;
 }
 
 .underrubrik img{
@@ -53,7 +55,7 @@ b{
     background:#df7721;
     text-align: center;
     font-size: 3rem;
-    padding: 20px;
+    padding: 30px;
 }
 
 .button:hover{
@@ -75,6 +77,34 @@ b{
     transform: translateY(-150%);
     transition: transform 0.4s ease;
     outline: 5px solid white;
+    animation: rainbowOutline 1s linear infinite;
+}
+
+@keyframes rainbowOutline{
+    0%{
+        outline-color: red;
+    }
+    15%{
+        outline-color: orange;
+    }
+    30%{
+        outline-color: yellow;
+    }
+    45%{
+        outline-color: green;
+    }
+    60%{
+        outline-color: blue;
+    }
+    75%{
+        outline-color: indigo;
+    }
+    90%{
+        outline-color: violet;
+    }
+    100%{
+        outline-color: rgb(147, 82, 144);
+    }
 }
 
 .popup.show{
@@ -107,17 +137,23 @@ b{
     font-size: 20px;
 }
 
-.fullscreen-image{
+#Rejected{
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    opacity: 1;
+    height: 100vh;
     z-index: 9999;
+    opacity: 100%;
 }
 
-.fullscreen-image.fade-out{
+#Rejected img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#Rejected.fade-out{
     animation: fadeOut 5s ease-out forwards;
 }
 
@@ -128,4 +164,35 @@ b{
     to{
         opacity: 0;
     }
+}
+
+@keyframes rainbowFont{
+    0%{
+        color: red;
+    }
+    15%{
+        color: orange;
+    }
+    30%{
+        color: yellow;
+    }
+    45%{
+        color: green;
+    }
+    60%{
+        color: blue;
+    }
+    75%{
+        color: indigo;
+    }
+    90%{
+        color: violet;
+    }
+    100%{
+        color: rgb(147, 82, 144);
+    }
+}
+
+#rainbow{
+    animation: rainbowFont 0.7s linear infinite;
 }
