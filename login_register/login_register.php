@@ -1,4 +1,4 @@
-<?php require_once('config.php'); ?>
+ <?php require_once('config.php'); ?>
 <?php
 
 session_start();
@@ -12,7 +12,7 @@ if (isset($_POST['register'])){
     $checkEmail = $conn->query("SELECT email FROM users WHERE email = '$email'");
     if ($checkEmail->num_rows > 0){
         $_SESSION['register_error'] = 'Email är redan registrerad!';
-        $_SESSION['register_form'] = 'register';
+        $_SESSION['active_form'] = 'register';
     } else{
         $conn->query("INSERT INTO users (name, email, password, role) VALUES ('$name', '$email', '$password', '$role')");
     }
@@ -42,7 +42,7 @@ if(isset($_POST['login'])){
     }
 
     $_SESSION['login_error'] = 'Inkorrekt email eller lösenord';
-    $_SESSIOn['active_form'] = 'login';
+    $_SESSION['active_form'] = 'login';
     header("Location: index.php");
     exit();
 }
